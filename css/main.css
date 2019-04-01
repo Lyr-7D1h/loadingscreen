@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+body {
+    margin: 0;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-family: "Ubuntu Mono", monospace, "Arial";
+}
+main {
+    /* display: none; */
+}
+h1 {
+    margin: 5px;
+}
+p {
+    font-size: 1.3em;
+    margin: 5px;
+    display: inline;
+}
+
+.background, .overlay, .progress {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: fixed;
+}
+.background {
+    background-image: url("../resources/images/bg.jpg");
+}
+.overlay {
+    background-color: rgba(50,50,50,0.8);
+}
+.progress {
+    width: 0vw;
+    background-color: rgba(150,150,150,0.1);
+    transition-duration: 1s;
+}
+
+.box {
+    position: fixed;
+    width: 50%;
+    left: 25%;
+    top: 25vh;
+    text-align: center;
+}
+.box > img {
+    position: relative;
+    width: 35%;
+    transition-duration: 2s;
+}
+
+.console {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 30%;
+}
+
+.info {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+#steam_map, #steam_user {
+    display: none;
+}
+.hl {
+    color: rgb(214, 38, 38);
+}
+footer {
+    position: fixed;
+    bottom: 5px;
+    color: darkgrey;
+    text-align: center;
+    width: 100%;
+    font-size: 0.8em;
+    margin: 5px;
+}
+
