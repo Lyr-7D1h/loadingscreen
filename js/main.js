@@ -24,7 +24,7 @@ let type_effect = (el, msg, cb, time=150) => {
         let letter = msg[i];
         setTimeout(() => {
             $(el).append(letter);
-            DownloadingFile("test");
+            //DownloadingFile("test");
 
             // Callback after print completed
             if (i == msg.length-1) {
@@ -58,7 +58,7 @@ $(function () {
 
     logo_animation();
 
-    SetFilesTotal( 20 );
+    //SetFilesTotal( 20 );
 
     get_http(crossOriginProvider, (data) => {
         // console.log(data);
