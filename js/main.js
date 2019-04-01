@@ -24,7 +24,6 @@ let type_effect = (el, msg, cb, time=150) => {
         let letter = msg[i];
         setTimeout(() => {
             $(el).append(letter);
-            //DownloadingFile("test");
 
             // Callback after print completed
             if (i == msg.length-1) {
@@ -58,12 +57,9 @@ $(function () {
 
     logo_animation();
 
-    //SetFilesTotal( 20 );
-
     get_http(crossOriginProvider, (data) => {
         // console.log(data);
         let player = data["response"]["players"][0];
-
 
         $('main').fadeIn();
 
@@ -95,5 +91,3 @@ function DownloadingFile( fileName ) {
 let refresh = () => {
     $('.progress').css('width', `${used/total * 100}%`)
 }
-refresh();
-
