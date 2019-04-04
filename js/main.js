@@ -49,7 +49,7 @@ let logo_animation = () => {
     }, 1200);
 }
 
-$(function () {
+// $(function () {
     let steamID = get_query('steamid');
     let map = get_query('mapname');
     let steamAPIURL = 'http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=' + STEAM_KEY + '&steamids=' + steamID;
@@ -73,7 +73,7 @@ $(function () {
             });
         });
     });
-});
+// });
 
 
 /**
