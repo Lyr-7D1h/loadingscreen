@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 body {
     margin: 0;
-    /* background-color: rgb(39, 39, 39); */
+    background-color: rgb(39, 39, 39);
     color: white;
     font-family: "Ubuntu Mono", monospace, "Arial";
 }
